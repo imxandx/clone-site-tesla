@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+html, body {
+    height: 100%;
+    background-image: url('./assets/modelY.jpg');
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.center {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 2%;
+}
+
+section .main {
+    width: 100%;
+    min-height: 100%;
+}
+
+header {
+    margin-top: 3%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.logo {
+    position: relative;
+    top: -40px;
+}
+
+.logo img {
+    width: 130px;
+}
+
+.menu {
+    margin-top: 15px;
+    font-weight: 600;
+}
+
+.menu a {
+    display: inline-block;
+    margin: 0 10px;
+    color: #000;
+    text-decoration: none;
+    transition: 0.3s;
+    padding: 3px 5px;
+}
+
+.menu a:hover {
+    border-radius: 5px;
+    background-color: rgba(180, 180, 180, 0.4);
+}
+
+.menu .social {
+    font-size: 20px;
+}
+
+.title {
+    text-align: center;
+    animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+
+    70% {
+        transform: translateY(-30px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.title h2 {
+    color: #000;
+    font-size: 45px;
+    letter-spacing: 1.2px;
+}
+
+.title p {
+    color: #707070;
+    margin-top: 10px;
+}
+
+.title p a {
+    color: #f2f2f2f2;
+}
+
+.btn {
+    margin-top: 35%;
+    display: flex;
+    justify-content: center;
+}
+
+.btn a {
+    display: inline-block;
+    padding: 8px 40px;
+    margin: 0 15px;
+    background-color: #333;
+    color: #f2f2f2f2;
+    border-radius: 15px;
+    text-decoration: none;
+}
+
+/* RESPONSIVIDADE */ 
+
+@media screen and (max-width: 480px) {
+    header {
+        display: block;
+        height: auto;
+        text-align: center;
+        padding: 15px 0;
+    }
+
+    .title {
+        margin-top: 10%;
+    }
+
+    .title p {
+        color: rgb(40, 40, 40);
+    }
+
+    .btn {
+        text-align: center;
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 50%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        display: block;
+        height: auto;
+        text-align: center;
+        padding: 15px 0;
+    }
+
+    .title {
+        margin-top: 10%;
+    }
+
+    .title p {
+        color: rgb(40, 40, 40);
+    }
+
+    .btn {
+        text-align: center;
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 50%;
+        width: 100%;
+        align-items: center;
+    }
+
+    .btn a {
+        width: 70%;
+    }
+}
